@@ -433,12 +433,14 @@ h1 {
   padding: 1.5rem;
   text-align: left;
   max-width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
   line-height: 1.5;
   color: #333;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  pointer-events: all; /* text box itself is still clickable */
+  pointer-events: all;
 }
 
 .step-content :global(p + p) {
