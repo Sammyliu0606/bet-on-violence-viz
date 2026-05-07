@@ -116,7 +116,7 @@ export const scrollSteps = [
     date: null,
     scale: 0.65,
     highlightIds: [],
-    text: 'Polymarket, however, is not effectively subject to the regulation. After being fined $1.4 million by the CFTC, it blocked U.S. users and mainly operated offshore. Over 95% of the violence, coercion and crisis-related events we identified in 2025 were created by Polymarket.',
+    text: '<p>Polymarket, however, is not effectively subject to the regulation. After being fined $1.4 million by the CFTC, it blocked U.S. users and mainly operated offshore. Over 95% of the violence, coercion and crisis-related events we identified in 2025 were created by Polymarket.</p><p>After acquiring a CFTC-regulated derivatives and futures exchange, Polymarket began returning to the U.S. market, rolling out a beta iOS app to waitlisted users in December 2025.</p>',
   },
   {
     // Step 17 
