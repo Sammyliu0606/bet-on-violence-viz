@@ -29,12 +29,12 @@
 
   onMount(async () => {
     try {
-      const url = '/data/events.json';
-      const res = await fetch(url);
+      const base = import.meta.env.BASE_URL;
+      const res = await fetch(`${base}data/events.json`);
       const json = await res.json();
       events = json.events;
 
-      const statsRes = await fetch('/data/category_stats.json');
+      const statsRes = await fetch(`${base}data/category_stats.json`);
       const statsJson = await statsRes.json();
       categorySummary = statsJson;
 
@@ -45,7 +45,7 @@
       xScale = result.xScale;
       monthTicks = generateMonthTicks(xScale);
 
-      const violenceRes = await fetch('/data/violent_coercion_crisis_eventsforviz.json');
+      const violenceRes = await fetch(`${base}data/violent_coercion_crisis_eventsforviz.json`);
       const violenceJson = await violenceRes.json();
       const violenceResult = settleViolenceSimulation(violenceJson.events, WIDTH, HEIGHT);
       const splitPositions = settleViolenceSplitSimulation(violenceJson.events, WIDTH, HEIGHT);
@@ -336,7 +336,6 @@ function panToStep(step) {
 </div>
 
 <!-- Debug: confirm currentStep is updating -->
-<div class="debug-step">Current step: {currentStep}</div>
 
 <style>
 .methodology {
@@ -446,18 +445,6 @@ h1 {
   margin-top: 0.75rem;
 }
 
-.debug-step {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-  font-family: monospace;
-  font-size: 12px;
-  color: #999;
-  background: white;
-  padding: 4px 8px;
-  border: 1px solid #eee;
-  z-index: 100;
-}
 
 .fixed-labels {
   position: absolute;
