@@ -1,0 +1,33 @@
+{
+  "total_events": 4598172,
+  "categories": [
+    {
+      "category": "Coercion",
+      "market_num": 235,
+      "percentage": 0.0,
+      "market_volume": 80600945,
+      "average_volume": 342983
+    },
+    {
+      "category": "Crisis",
+      "market_num": 323,
+      "percentage": 0.0,
+      "market_volume": 489843462,
+      "average_volume": 1516543
+    },
+    {
+      "category": "Neutral",
+      "market_num": 4597234,
+      "percentage": 100.0,
+      "market_volume": 44071944724,
+      "average_volume": 9587
+    },
+    {
+      "category": "Violence",
+      "market_num": 380,
+      "percentage": 0.0,
+      "market_volume": 363326332,
+      "average_volume": 956122
+    }
+  ]
+}
