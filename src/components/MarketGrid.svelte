@@ -118,7 +118,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 3rem 0 1.5rem;
+    padding: clamp(1rem, 3vh, 3rem) 0 1.5rem;
     overflow: hidden;
   }
 
@@ -156,10 +156,10 @@
     justify-content: space-between;
     min-width: 180px;
     max-width: 180px;
-    height: 100px;
+    height: clamp(70px, 10vh, 100px);
     background: #f5f5f5;
     border-radius: 8px;
-    padding: 10px 12px;
+    padding: clamp(6px, 1vh, 10px) 12px;
     flex-shrink: 0;
   }
 
