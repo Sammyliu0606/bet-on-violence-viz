@@ -130,7 +130,7 @@ export const scrollSteps = [
     date: null,
     scale: 0.65,
     highlightIds: [],
-    text: 'The same financial incentives, however, monetize confidential information and potentially manipulate the outcomes being predicted.”',
+    text: 'The same financial incentives, however, monetize confidential information and potentially manipulate the outcomes being predicted.',
   },
   {
     // Step 19
